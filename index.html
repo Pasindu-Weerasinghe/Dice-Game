@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 id="message" class="msg">Start Player 01 Turn</h1>
+        <!-- dice scroll area -->
+        <div class="container1">
+            <div class="dice-wrapper">
+                <img src="img/defimg1.jpg" alt="" id="dice-1" width="120px" height="130px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="img/defimg2.jpg" alt="" id="dice-2" width="120px" height="130px">
+            </div>
+        </div>
+        <!-- dice scrol area end -->
+        <!-- roll button -->
+        <div class="btn-pos">
+            <button class="btn" id="rollbtn" onclick="roll()">ROLL</button>&nbsp;
+            <button class="btn" id="resetbtn" onclick="reset()">RESET</button>
+        </div>
+        <!-- roll button end -->
+        <!-- player 01 score area -->
+        <div class="container2">
+            <h1 style="font-size: 40px;">Player 01</h1>
+            <br>
+            <h1>Score : <div style="display: inline-block;" id="p1score">00</div></h1>
+        </div>
+        <!-- Player 01 score area end -->
+            
+        <!-- Player 02 score area -->
+        <div class="container3">
+            <h1 style="font-size: 40px;">Player 02</h1>
+            <br>
+            <h1>Score : <div style="display: inline-block;" id="p2score">00</div></h1>
+        </div>
+        <!-- Player 02 score area end-->
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
